@@ -17,7 +17,7 @@ public class RestController {
     @Autowired
     private PersonService personService;
 
-    @GetMapping
+    @GetMapping("all")
     public List<PersonDTO> getAll(){
         return personService.getAll();
     }
