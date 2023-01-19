@@ -73,7 +73,7 @@ public class RestControllerTest {
     @Test
     @Transactional
     public void getAllTest() throws Exception {
-        MvcResult result = mockMvc.perform(get("/person"))
+        MvcResult result = mockMvc.perform(get("/person/all"))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON))
                 .andReturn();
