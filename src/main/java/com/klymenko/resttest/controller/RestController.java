@@ -16,6 +16,7 @@ import java.util.List;
 public class RestController {
     @Autowired
     private PersonService personService;
+
     @GetMapping("all")
     public List<PersonDTO> getAll(){
         return personService.getAll();
